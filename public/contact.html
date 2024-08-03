@@ -161,7 +161,7 @@
                           </div>
                       </div>
                       <div class="col-12">
-                          <button type="submit" class="btn btn-danger Register">Submit</button>
+                          <button type="submit" value="submit" class="btn btn-danger Register">Submit</button>
                       </div>
                   </form>
                   
@@ -287,26 +287,26 @@
     </Footer>
   
     <script>
-        // var form =document.getElementById("userInfo");
-        // form.addEventListener("submit", function(event){
-        //     event.preventDefault();
+        var form =document.getElementById("userInfo");
+        form.addEventListener("submit", function(event){
+            event.preventDefault();
 
-        //     const fullName  = document.getElementById("fullname").value;
-        //     const aadhaarId = document.getElementById("aadhaar").value;
-        //     const emailId = document.getElementById("email").value;
-        //     const mNumber = document.getElementById("mnumber").value;
-        //     const Address = document.getElementById("address").value;
-        //     const City = document.getElementById("city").value;
-        //     const State = document.getElementById("state").value;
-        //     const zipCode = document.getElementById("zipcode").value;
-        //     const Recordes = document.getElementById("records").value; 
-        //     const Location = document.getElementById("location").value; 
-        //     const Messeges = document.getElementById("msgs").value; 
+            const fullName  = document.getElementById("fullname").value;
+            const aadhaarId = document.getElementById("aadhaar").value;
+            const emailId = document.getElementById("email").value;
+            const mNumber = document.getElementById("mnumber").value;
+            const Address = document.getElementById("address").value;
+            const City = document.getElementById("city").value;
+            const State = document.getElementById("state").value;
+            const zipCode = document.getElementById("zipcode").value;
+            const Recordes = document.getElementById("records").value; 
+            const Location = document.getElementById("location").value; 
+            const Messeges = document.getElementById("msgs").value; 
             
-        //     if(!aadhaarId || !mNumber || !Recordes || !zipCode){
-        //         alert("This Fields are importan so kindly fill correctly");
-        //         return;
-        //     }
+            if(!aadhaarId || !mNumber || !Recordes || !zipCode){
+                alert("This Fields are importan so kindly fill correctly");
+                return;
+            }
             // alert("Full Name :" +fullName);
             // alert("Aadhaaer Id :" +aadhaarId);
             // alert("Email Id :" +emailId);
@@ -318,7 +318,7 @@
             // alert("Recordes :" +Recordes);
             // alert("Location :" +Location);
             // alert("Messeges :" +Messeges);
-        // });
+        });
        
 
 
